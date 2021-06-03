@@ -1,0 +1,32 @@
+.tweet-card{
+    margin-left: 50%;
+   margin-right: 50%;
+   text-align: center;
+}
+.twitter-cards{
+    align-items: center;
+}
+.retweet-icon{
+    height: 30px;
+    width: 30px;
+}
+.porfile-image{
+    border-radius: 20%;
+    height: 40px;
+    width: 40px;
+}
+mat-form-field{
+    background-color: white;
+    height: 10px;
+    width: 150px;
+    margin-right: 10px;
+}
+.head-style{
+    display: flex; 
+}
+h1{
+   flex:1 ;
+   display: flex;
+   margin-left: 50%;
+   margin-right: 50%;
+}

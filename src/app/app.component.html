@@ -1,0 +1,33 @@
+  <div style="align-items: center;">
+    <div class="head-style">
+      <h1>
+        <img style="width: 45px; height: 40px;" src="../assets/TwitterIcon.png">
+        Twitter
+      </h1>
+
+    </div>
+    <div class="twitter-cards">
+      <div *ngFor="let value of apiValues|async">
+        <mat-card>
+          <table style="margin-right: 5px;">
+            <tr style="margin-right: 3px;">
+              <td>
+                <img  class="porfile-image" src="{{value.user.profileImageUrl}}">
+              {{value.user.name}}
+              </td>
+            <tr>   
+             <td>@{{value.user.screenName}} </td>  
+            </tr>
+            <tr>
+              <td>{{value.text}}</td>
+            </tr>
+            <tr>
+              <td>{{value.created_at}}</td>
+            </tr>
+          </table>
+        </mat-card>
+      </div>
+      <br/>
+    </div>
+  <router-outlet></router-outlet>
+  </div>
